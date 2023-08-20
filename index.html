@@ -11,7 +11,7 @@
     <title>85-summer-sale-main</title>
 </head>
 <body>
-    <header class="bg-orange-100">
+    <header class="bg-yellow-100">
    <div class="flex gap-10 justify-center items-center p-20 md: flex-col lg:flex-row">
          <!-- this is header details start -->
          <div class="text-center ">
@@ -28,7 +28,7 @@
    </div>
        
     </header>
-    <main class="pr-32  mt-24 w-11/12 m-auto bg-gray-100 grid  grid-cols-1 md:grid-cols-1 lg:grid-cols-5">
+    <main class="pr-32  mt-24 w-11/12 m-auto justify-items-center bg-gray-100 grid  grid-cols-1 md:grid-cols-1 lg:grid-cols-5">
        <div class="col-span-4">
         <!-- kitchenware start here -->
         <div class=" p-10">
@@ -50,7 +50,7 @@
                   </div>
                 <!-- this is rating end -->
                 <h2 class="card-title">K. Accessories</h2>
-              <p>39.00 TK</p>
+              <p>180.00 TK</p>
             </div>
           </div>
         <!-- first card end here -->
@@ -70,7 +70,7 @@
                   </div>
                 <!-- this is rating end -->
                 <h2 class="card-title">Beloneanow</h2>
-              <p>25.00 TK</p>
+              <p>50.00 TK</p>
             </div>
           </div>
         <!-- second card end end -->
@@ -91,7 +91,7 @@
                   </div>
                 <!-- this is rating end -->
                 <h2 class="card-title">Home Cooker</h2>
-              <p>50.00 TK</p>
+              <p>150.00 TK</p>
             </div>
           </div>
         <!-- third card end here -->
@@ -238,27 +238,27 @@
        </div>
 
  <!-- product name ,price , cash details corner -->
-       <div class="col-span-1 bg-base-100  h-96 w-72 p-5 mt-28">
+       <div class="col-span-1 bg-base-100 w-72 p-5 mt-28 lg:h-2/5">
         <div class="mb-5"> 
            <h2 class="text-1xl font-semibold">Have coupon?</h2>
-           <input class="w-28 border-2 border-pink-500 text-sm px-3 py-1" type="text" placeholder="Coupon code">
-           <button class="bg-pink-500 px-3 py-1 rounded text-white text-sm font-semibold hover:bg-gray-300 ">Apply</button>
+           <input id="coupon" class="w-28 border-2 border-pink-500 text-sm px-3 py-2" type="text" placeholder="Coupon code">
+           <button id="apply" class="btn bg-pink-500 px-5 py-1 text-white text-sm font-semibold" disabled >Apply</button>
         </div>
         <hr>
         <div>
             <div id="product-Name" class="mb-5">
-               
+               <h1 class="text-xl font-semibold" >Product List : </h1>
              </div>
              <hr>
              <div id="product-price" class="mb-5">
-                <h3>Total price: <span id="total">100</span> Taka</h3>
-                <h3>Discound: 120 Taka</h3>
-                <h3>Total: 120 Taka</h3>
+                <h3 class="text-xl font-semibold">Total price : <span id="total"> 00 </span> Taka</h3>
+                <h3 class="text-xl font-semibold">Discount : <span id="discount"> 00 </span> Taka</h3>
+                <h3 class="text-xl font-semibold">Total  : <span id="total-bill"> 00 </span> Taka</h3>
              </div>
              <hr> <br>
             <div>
          <!-- Open the modal using ID.showModal() method -->
-         <button class="btn bg-pink-500 w-full py-2 text-white text-1xl font-medium" onclick="my_modal_1.showModal()">Make Purchase</button>
+         <button id="btn-purchase" class="btn bg-pink-500 w-full py-2 text-white text-1xl font-medium" onclick="my_modal_1.showModal()" disabled >Make Purchase</button>
             <dialog id="my_modal_1" class="modal">
               <form method="dialog" class="modal-box text-center">
                 <img class="w-24 m-auto mb-5" src="images/congo.png" alt="">
@@ -266,7 +266,7 @@
                   <p class="py-4">Your Purchase the product</p>
                     <div class="modal-action">
         <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn m-auto bg-pink-500 text-white">Go Home</button>
+                    <button id="home" class="btn m-auto bg-pink-500 text-white">Go Home</button>
                    </div>
               </form>
             </dialog>
