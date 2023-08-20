@@ -6,10 +6,8 @@ function card(target) {
   const p = document.createElement("p");
   productNameContainer.appendChild(p);
   let count = productNameContainer.childElementCount;
-   p.innerHTML = `${count - 1 } . ${productName}`;
-  
- 
-  Total = Total + productPrice;
+  p.innerHTML = `${count - 1} . ${productName}`;
+   Total = Total + productPrice;
   document.getElementById("total").innerText = Total.toFixed(2);
   document.getElementById("total-bill").innerText = Total.toFixed(2);
   if (Total >= 200) {
@@ -32,12 +30,14 @@ document.getElementById("apply").addEventListener("click", function () {
     document.getElementById("total-bill").innerText = Total.toFixed(2);
     alert("Your coupon is incorrect");
   }
- coupon = '';
+  coupon = "";
 });
 
 document.getElementById("home").addEventListener("click", function () {
   // window.open("http://127.0.0.1:5500/index.html");
   document.getElementById("total").innerText = "00";
   document.getElementById("total-bill").innerText = "00";
-const productNameContainer = document.getElementById("product-Name").innerHTML= `<h1 class="text-xl font-semibold" >Product List : </h1>`;
+  const productNameContainer = (document.getElementById(
+    "product-Name"
+  ).innerHTML = `<h1 class="text-xl font-semibold" >Product List : </h1>`);
 });
