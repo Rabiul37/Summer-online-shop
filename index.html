@@ -35,7 +35,7 @@
             <h1 class="text-3xl font-semibold mb-5">Kitchenware</h1>
          <div class="grid gap-5 justify-center items-center grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
              <!-- first card start here -->
-        <div id="card" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
+        <div onclick="card(this)" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
             <figure class="px-10 pt-10 bg-gray-200 w-5/6 m-auto mt-5 ">
               <img class="w-20 mb-10" src="images/prod1.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -55,7 +55,7 @@
           </div>
         <!-- first card end here -->
         <!-- second card start here -->
-        <div id="card" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
+        <div onclick="card(this)" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
             <figure class="px-10 pt-10 bg-gray-200 w-5/6 m-auto mt-5 ">
               <img class="w-20 mb-10" src="images/prod2.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -76,7 +76,7 @@
         <!-- second card end end -->
 
         <!-- third card start here -->
-        <div id="card" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
+        <div onclick="card(this)" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
             <figure class="px-10 pt-10 bg-gray-200 w-5/6 m-auto mt-5 ">
               <img class="w-20 mb-10" src="images/prod3.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -103,7 +103,7 @@
             <h1 class="text-3xl font-semibold mb-5">Sportware</h1>
          <div class="grid gap-5 grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
              <!-- first card start here -->
-        <div id="card" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
+        <div onclick="card(this)" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
             <figure class="px-10 pt-10 bg-gray-200 w-5/6 m-auto mt-5 ">
               <img class="w-20 mb-10" src="images/prod4.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -123,7 +123,7 @@
           </div>
         <!-- first card end here -->
         <!-- second card start here -->
-        <div id="card" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
+        <div onclick="card(this)" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
             <figure class="px-10 pt-10 bg-gray-200 w-5/6 m-auto mt-5 ">
               <img class="w-20 mb-10" src="images/prod5.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -144,7 +144,7 @@
         <!-- second card end end -->
 
         <!-- third card start here -->
-        <div id="card" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
+        <div onclick="card(this)" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
             <figure class="px-10 pt-10 bg-gray-200 w-5/6 m-auto mt-5 ">
               <img class="w-20 mb-10" src="images/prod6.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -172,7 +172,7 @@
             <h1 class="text-3xl font-semibold mb-5">Kitchenware</h1>
          <div class="grid gap-5 justify-center items-center grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
              <!-- first card start here -->
-        <div id="card" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
+        <div onclick="card(this)" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
             <figure class="px-10 pt-10 bg-gray-200 w-5/6 m-auto mt-5 ">
               <img class="w-20 mb-10" src="images/prod7.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -186,13 +186,13 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
                 <!-- this is rating end -->
-                <h2 class="card-title">Relax Chair</h2>
+              <h2 class="card-title">Relax Chair</h2>
               <p>200.00 TK</p>
             </div>
           </div>
         <!-- first card end here -->
         <!-- second card start here -->
-        <div id="card" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
+        <div onclick="card(this)" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
             <figure class="px-10 pt-10 bg-gray-200 w-5/6 m-auto mt-5 ">
               <img class="w-20 mb-10" src="images/prod8.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -213,7 +213,7 @@
         <!-- second card end end -->
 
         <!-- third card start here -->
-        <div id="card" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
+        <div onclick="card(this)" class="card w-52 h-72 bg-base-100 shadow-2xl cursor-pointer">
             <figure class="px-10 pt-10 bg-gray-200 w-5/6 m-auto mt-5 ">
               <img class="w-20 mb-10" src="images/prod3.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -247,16 +247,12 @@
         <hr>
         <div>
             <div id="product-Name" class="mb-5">
-                <ol>
-                    <li>product 1</li>
-                    <li>product 2</li>
-                    <li>product 3</li>
-                </ol>
+               
              </div>
              <hr>
              <div id="product-price" class="mb-5">
-                <h3>Total price:120 Taka</h3>
-                <h3>Discound:120 Taka</h3>
+                <h3>Total price: <span id="total">100</span> Taka</h3>
+                <h3>Discound: 120 Taka</h3>
                 <h3>Total: 120 Taka</h3>
              </div>
              <hr> <br>
